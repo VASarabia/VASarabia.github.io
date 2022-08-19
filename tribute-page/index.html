@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport content="width=device-width, inicial-scale=1>
+	<title>Mi primera página c:</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css externo.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+		
+<body>
+	<script>
+    	function myFunction() {
+        	const navigationBar = document.getElementById("navigation-bar");
+        	if (navigationBar.className === "navigation-bar") {
+            	navigationBar.className += " responsive";
+        	} else {
+            	navigationBar.className = "navigation-bar";
+        	}
+    	}
+	</script>
+		
+	</head>
+
+	<header id="header">
+		<h1> Historia del Death Metal</h1> 
+	</header>
+
+	<nav id="navigation-bar"> 
+		<ul>
+			<li> <a class="active" href="index.html">Inicio</a> </li>
+			<li> <a href="#">Página 2</a> </li>
+			<li> <a href="#">Página 3</a> </li>
+			<li class="menu__hamburger-icon">
+				<a href="javascraip:void(0);" onclick="myFunction()"> 
+					<i class="lni lni-menu"></i>
+				</a>
+			
+			</li>
+		</ul>
+	</nav>
+
+	<div id="main-content-container">
+		<aside id="links-sidebar">
+			<h3>Sitios de interés</h3>
+			<ul>
+				<li> <a href="#">Sitio 1</a> </li>
+				<li> <a href="#">Sitio 2</a> </li>
+				<li> <a href="#">Sitio 3</a> </li>
+				<li> <a href="#">Sitio 4</a> </li>
+			</ul>
+		</aside>
+
+		<section id="main-content">
+			<p> <img src="https://www.morecore.de/wp-content/uploads/jinjer_promo_01_2019.jpg" alt="Imagen de la banda Jinger" width="600px" alt="Imagen de la banda JinJer"> </p>
+			<p> El death metal nació como un subgénero extremo del Heavy Metal. Se caracteriza por utilizar voces guturales, guitarras con un uso excesivo de overdrive, afinaciones graves para sus instrumentos, percusión rápida (con un dominante uso del doble pedal), complejas estructuras musicales, además de técnicas poco ortodoxas para la composición de los riffs de guitarra. La temática del death metal abarca temas como las historias de terror, el anticristianismo, asesinos en serie, canibalismo, torturas, entre otros. Por otra parte, se ve influenciado por los problemas físicos y morales del hombre: muerte, belicismo, sociedad, iluminación, filosofía y otros.</p>
+			<p>Normalmente, una banda de death metal está compuesta por un vocalista, dos guitarristas, un bajista y un baterista, es decir, la formación estándar del heavy metal. </p>
+		</section>
+	</div>
+	<br>
+	<footer id="footer">
+		<div class="footer__social footer__section">
+			<h2>Mis redes</h2>
+			
+			<div class="social__networks">
+				<div class="social__network">
+					<span class="social__icon-container"> <i class="lni lni-github-original social-icon"> </i> </span>
+					<span class="social__icon-handler"> <a href="https://github.com/VASarabia"> @VASarabia </a> </span>
+				</div>
+			
+				<div class="social__network">
+					<span class="social__icon-container"> <i class="lni lni-linkedin-original"> </i> </span>
+					<span class="social__icon-handler"> <a href="https://github.com/VASarabia"> V. Sarabia </a> </span>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer_contact-from footer__section"> 
+			<h2>Contacto</h2>
+			<div>
+				<form>
+					<label for="contactEmail">Correo electrónico:</label>
+					<input for="contactEmail" required type="email" placeholder="Ingresa tu correo electrónico">
+					
+					<label for="contactMessage">Mensaje:</label>
+					<textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+					
+					<input type="submit" value="Enviar">
+				</form>
+			</div>
+		</div>
+		
+		<div class="footer__more-sites footer__section">
+			<h2>Otros sitios</h2>
+		</div>
+	</footer>
+</body>
+</html>
